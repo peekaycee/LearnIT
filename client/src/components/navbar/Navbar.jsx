@@ -59,7 +59,7 @@ const Navbar = () => {
       <div className='lms__navbar'>
         <div className='lms__navbar-links'>
           <div className='lms__navbar-links_logo'>
-            <h1 className='logo'>PKtech</h1>
+          <Link to='/'><h1 className='logo'>PKtech</h1></Link>
           </div>
           <div className='lms__navbar-links_container'>
             <Menu />
@@ -69,7 +69,7 @@ const Navbar = () => {
           <p onClick={()=>{
               setToggleSigninCard(!toggleSigninCard)
               setToggleSignupCard(false)
-          }}>Sign in</p>
+          }}>Log in</p>
           <button type='button' onClick={()=>{
             setToggleSignupCard(!toggleSignupCard)
             setToggleSigninCard(false)
@@ -94,9 +94,15 @@ const Navbar = () => {
               <div className='lms__navbar-menu_container-links'>
                 <Menu />
               </div>
-              <div className='lms__navbar-menu_container-links-sign'>
-                <p>Sign in</p>
-                <button type='button'>Sign up</button>
+              <div className='lms__navbar-menu_container-links-sign lms__navbar-sign'>
+                <p onClick={()=>{
+                      setToggleSigninCard(!toggleSigninCard)
+                      setToggleSignupCard(false)
+                    }}>Log in</p>
+                <button type='button' onClick={()=>{
+                      setToggleSignupCard(!toggleSignupCard)
+                      setToggleSigninCard(false)
+                    }}>Sign up</button>
               </div>
             </div>
           )}

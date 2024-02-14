@@ -14,7 +14,7 @@ const SignIn = ({ onClose }) => {
     <div className='sign__in-container'>
       {toggleSigninCard && (
         <div className='signin__card'>
-          <form id='signin__form'>
+          <form id='signin__form'>    {/* sign in form starts here*/}
             <div className='closeBtn'>
               <IoIosClose
                 className='close__btn'
@@ -52,15 +52,16 @@ const SignIn = ({ onClose }) => {
               />
             </div>
             <div className='submit__btn'>
-              <button type='submit'>SIGN IN</button>
+              <button type='submit'
+              >LOG IN</button>
             </div>
-          </form>
+          </form>     {/* sign in form ends here*/}
           <div className='sign__in--text'>
             <Link to='#'>
               <p>forgot password?</p>
             </Link>
             <p>or</p>
-            <p>sign in with</p>
+            <p>log in with</p>
           </div>
           <div className='social__icons'>
             <div className='google'>

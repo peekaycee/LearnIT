@@ -1,10 +1,14 @@
 import { Hero, About } from '../../components/index.js'
+import './homepage.css'
+
 const Homepage = () => {
   return (
-    <div>
-        <Hero />
-        <About />
-    </div>
+    <>
+      <main>
+          <Hero />
+          <About />
+      </main>
+    </>
   )
 }
 
