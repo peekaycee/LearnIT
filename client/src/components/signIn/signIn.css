@@ -1,5 +1,5 @@
 .signin__card {
-  background: var(--color-about);
+  background: var(--color-bg2);
   position: fixed;
   top: 20%;
   right: 33.3%;
@@ -81,7 +81,7 @@ form {
   border: 0;
   padding: 0 1em;
   font-size: 1.03rem;
-  background: var(--color-footer);
+  background: var(--color-bg1);
   color: var(--color-secondary-text);
   opacity: 0.8;
 }

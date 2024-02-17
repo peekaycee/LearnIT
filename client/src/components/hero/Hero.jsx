@@ -7,7 +7,7 @@ import '../../App.css';
 
 const HeroPage = () => {
   return (
-    <div className='hero section__padding hero'>
+    <div className='section__padding hero'>
       <div className='hero-content'>
         <h1 className='gradient__text'>
           Lorem ipsum dolor sit amet consect worked!

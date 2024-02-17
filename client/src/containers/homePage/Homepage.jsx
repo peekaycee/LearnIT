@@ -1,12 +1,14 @@
-import { Hero, About } from '../../components/index.js'
+import { Hero, About, Features, Statistics } from '../../components/index.js'
 import './homepage.css'
 
 const Homepage = () => {
   return (
     <>
-      <main>
+      <main className='main__container'>
           <Hero />
-          <About />
+          <About /> 
+          <Features />
+          <Statistics/>
       </main>
     </>
   )

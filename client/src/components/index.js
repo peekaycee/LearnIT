@@ -4,3 +4,5 @@ export { default as About } from './about/About'
 export { default as Hero } from './hero/Hero'
 export { default as SignIn } from './signIn/SignIn';
 export { default as SignUp } from './signUp/SignUp';
+export { default as Features } from './features/Features';
+export { default as Statistics } from './statistics/Statistics';
