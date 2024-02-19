@@ -30,7 +30,6 @@ const Statistics = () => {
           <div className='content__data'>
             <div className='data'>
               <h3>3+</h3>
-              
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               </p>
