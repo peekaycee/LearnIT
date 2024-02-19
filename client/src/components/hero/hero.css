@@ -18,7 +18,7 @@
   font-size: 62px;
   line-height: 75px;
   letter-spacing: -0.04em;
-  color: var(--white);
+  color: var(--color-secondary-text);;
 }
 .hero-content p {
   font-family: var(--font-family);

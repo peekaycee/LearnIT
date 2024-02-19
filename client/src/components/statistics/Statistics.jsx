@@ -1,4 +1,4 @@
-import { blog05 } from '../../assets/index';
+import { blog02 } from '../../assets/index';
 import './statistics.css';
 
 const Statistics = () => {
@@ -9,45 +9,39 @@ const Statistics = () => {
       </div>
       <div className='stats__content'>
         <div className='stats__content-image'>
-          <img src={blog05} alt='' />
+          <img src={blog02} alt='' />
         </div>
         <article className='stats__content-data'>
+        <div className="data__container">
           <div className='content__data'>
             <div className='data'>
-              <p>1</p>
+              <h3>1</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
-                ex optio magnam sapiente ad consequuntur repellat temporibus ut?
-                Aperiam, quibusdam?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               </p>
             </div>
             <div className='data'>
-              <p>2+</p>
+              <h3>2+</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
-                ex optio magnam sapiente ad consequuntur repellat temporibus ut?
-                Aperiam, quibusdam?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               </p>
             </div>
           </div>
           <div className='content__data'>
             <div className='data'>
-              <p>3+</p>
+              <h3>3+</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
-                ex optio magnam sapiente ad consequuntur repellat temporibus ut?
-                Aperiam, quibusdam?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               </p>
             </div>
             <div className='data'>
-              <p>4</p>
+              <h3>4</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
-                ex optio magnam sapiente ad consequuntur repellat temporibus ut?
-                Aperiam, quibusdam?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               </p>
             </div>
           </div>
+        </div>
         </article>
       </div>
     </section>
