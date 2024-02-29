@@ -1,4 +1,4 @@
-import { Hero, About, Features, Statistics } from '../../components/index.js'
+import { Hero, About, Features, Statistics, Benefits, Newsletter, Cta, Contact } from '../../components/index.js'
 import './homepage.css'
 
 const Homepage = () => {
@@ -9,6 +9,10 @@ const Homepage = () => {
           <About /> 
           <Features />
           <Statistics/>
+          <Benefits/>
+          <Newsletter/>
+          <Cta/>
+          <Contact/>
       </main>
     </>
   )

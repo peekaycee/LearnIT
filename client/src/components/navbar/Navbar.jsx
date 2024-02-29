@@ -4,17 +4,20 @@ import './navbar.css';
 import '../../App.css';
 import { Link } from 'react-router-dom';
 import SignIn from '../signIn/SignIn';
-import SignUp from "../signUp/SignUp"
+import SignUp from "../signUp/SignUp";
+import { Breadcrumbs } from '@mui/material';
 
 
 const Menu = () => (
   <>
+    <Breadcrumbs/>  
     <p>
      <Link to='/'>Home</Link>
     </p>
     <p>
       <a href='#about'>About</a>
     </p>
+    <p>Explore</p>
     <p>
       <a href='#contact'>Contact</a>
     </p>
