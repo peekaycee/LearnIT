@@ -10,9 +10,9 @@ const Homepage = () => {
           <Features />
           <Statistics/>
           <Contact/>
-          <Cta/>
-          <Benefits/>
           <Newsletter/>
+          <Benefits/>
+          <Cta/>
       </main>
     </>
   )
