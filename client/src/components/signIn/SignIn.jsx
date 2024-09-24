@@ -14,6 +14,7 @@ const SignIn = ({ onClose }) => {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  // eslint-disable-next-line no-unused-vars
   const [error, setError] = useState("");
 
   const handleSignIn = async (e) => {
@@ -24,7 +25,7 @@ const SignIn = ({ onClose }) => {
         { email, password }
       );
       console.log(response.data); // Handle successful login
-    } catch (error) {
+    } catch ({error}) {
       setError(error.response.data.message); // Handle error
     }
   };
@@ -33,7 +34,7 @@ const SignIn = ({ onClose }) => {
     <div className='sign__in-container'>
       {toggleSigninCard && (
         <div className='signin__card'>
-          <form id='signin__form' onSubmit={handleSignIn}>    {/* sign in form starts here*/}
+          <form id='signin__form' onSubmit={handleSignIn} autoComplete='true'>    {/* sign in form starts here*/}
             <div className='closeBtn'>
               <IoIosClose
                 className='close__btn'
@@ -53,6 +54,7 @@ const SignIn = ({ onClose }) => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                autoComplete='true'
               />
             </div>
             <div className='password__card'>

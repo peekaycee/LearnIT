@@ -1,0 +1,66 @@
+.instructors-container{
+    width: 100%;
+    height: auto;
+    padding: 5em 0;
+}
+.instructors-container h2 {
+    color: var(--color-secondary-text);
+    font-size: 2.5rem;
+    padding: 1em 2em 0.4em;
+}
+.cards {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 90%;
+    padding: 2em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+.card{
+    width: 20%;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 987px){
+    .instructors-container h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .cards{
+        width: 100%;
+        gap: 3em;
+        padding: 1em;
+    }
+    .card{
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 787px){
+   .instructors-container{
+    padding-top: 3em;
+   }
+    .card{
+        width: 30%;
+    }
+    .card:first-child{
+        margin-top: 1em;
+    }
+}
+@media only screen and (max-width: 597px){
+    .cards{
+        display: block;
+        padding: 0;
+    }
+    .card{
+        width: 70%;
+        margin: 3em auto;
+    }
+}

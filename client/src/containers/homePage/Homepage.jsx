@@ -1,21 +1,38 @@
-import { Hero, About, Features, Statistics, Benefits, Newsletter, Cta, Contact } from '../../components/index.js'
-import './homepage.css'
+import {
+  Hero,
+  About,
+  Features,
+  Statistics,
+  Instructors,
+  Cta,
+  // Testimonials,
+  // Benefits,
+  // Newsletter,
+  // Contact,
+} from '../../components/index.js';
+import './homepage.css';
 
-const Homepage = () => {
+// eslint-disable-next-line react/prop-types
+const Homepage = ({blur, setBlur}) => {
+  
   return (
     <>
-      <main className='main__container'>
-          <Hero />
-          <About /> 
-          <Features />
-          <Statistics/>
-          <Contact/>
-          <Newsletter/>
+      <main className='main__container' id={blur? 'blur': ''}>
+        <Hero />
+        <About />
+        <Features />
+        <Statistics />
+        <Instructors />
+        <Cta blur={blur} setBlur={setBlur} />
+        {/* 
+          <Testimonials />
           <Benefits/>
-          <Cta/>
+          <Newsletter/>
+          <Contact/>
+          */}
       </main>
     </>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;

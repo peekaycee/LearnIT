@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import './signUp.css';
 import { Link } from 'react-router-dom';
 import { google, github, facebook, closeEye, openEye } from '../../assets';
@@ -36,7 +35,7 @@ const SignUp = ({ onClose }) => {
     <div className='sign__up-container'>
       {toggleSignupCard && (
         <div className='signup__card '>
-          <form id='signup__form' onSubmit={handleSignUp}>
+          <form id='signup__form' onSubmit={handleSignUp} autoComplete='true'>
             <div className='closeBtn'>
               <IoIosClose
                 className='close__btn'
@@ -57,6 +56,7 @@ const SignUp = ({ onClose }) => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                autoComplete='true'
               />
             </div>
             <div className='password__card'>

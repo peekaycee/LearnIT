@@ -2,3 +2,9 @@
     width: 100%;
     height: auto;
 }
+
+.main__container#blur {
+    filter: blur(3px); 
+    pointer-events: none; 
+    user-select: none;
+}
